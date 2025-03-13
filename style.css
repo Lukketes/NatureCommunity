@@ -9,7 +9,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Cabeçalho */
 header {
     background: white;
     border-bottom: 1px solid #ddd;
@@ -27,13 +26,11 @@ header {
     margin: 0 auto;
 }
 
-/* Logo */
 .logo img {
     width: 180px;
     height: auto;
 }
 
-/* Ícones */
 .menu-icon, .cart-icon {
     display: flex;
     align-items: center;
@@ -50,7 +47,6 @@ header {
     opacity: 0.7;
 }
 
-/* Menu Suspenso */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -73,7 +69,6 @@ header {
     transform: translateY(10px);
 }
 
-/* Barra de Pesquisa no Menu */
 .dropdown-menu .search-bar {
     margin-bottom: 20px;
 }
@@ -87,7 +82,6 @@ header {
     outline: none;
 }
 
-/* Links do Menu */
 .dropdown-menu ul {
     list-style: none;
 }
@@ -106,4 +100,18 @@ header {
 
 .dropdown-menu ul li a:hover {
     color: #4CAF50;
+}
+
+/* Banner */
+.banner {
+    background-image: url('sources/banner1.png'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Altura do banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }

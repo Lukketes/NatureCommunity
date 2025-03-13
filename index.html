@@ -5,18 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NatureCommunity</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="js/main.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="sources/firstlogo.png" alt="firstlogo" id="firstlogo">
+        <div class="header-container">
+
+            <div class="menu-icon">
+                <img src="sources/menu.png" alt="Menu" id="menuIcon" class="icons_size">
+            </div>
+
+            <div class="logo">
+                <img src="sources/firstlogo.png" alt="Logo da NatureCommunity" id="firstlogo">
+            </div>
+
+            <div class="cart-icon">
+                <img src="sources/shop.png" alt="Carrinho" class="icons_size">
+            </div>
         </div>
-        <div class="icons">
-            <a href="pages/search.html"><img src="sources/search.png" alt="Buscar" id="icons_size"></a>
-            <a href="pages/shop.html"><img src="sources/shop.png" alt="Carrinho" id="icons_size"></a>
-            <a href="pages/user.html"><img src="sources/user.png" alt="User" id="icons_size"></a>
+
+        <div id="dropdownMenu" class="dropdown-menu hidden">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Curioso">
+            </div>
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+            </ul>
         </div>
     </header>
-
 </body>
 </html>

@@ -1,33 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
-    body {
-        background-color: #f9f9f9;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-        background: white;
-        border-bottom: 1px solid #ddd;
-    }
-    #firstlogo {
-        width: 195px;
-        height: auto;
-    }   
-    .icons a {
-        margin-left: 20px;
-        font-size: 18px;
-        color: black;
-        text-decoration: none;
-    }
+body {
+    background-color: #f9f9f9;
+}
 
-    #icons_size {
-        height: 30px;
-        width: auto;
-    }
+/* Cabeçalho */
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    padding-bottom: 70px;
+    position: relative;
+    height: 80px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* Ícones */
+.menu-icon, .cart-icon {
+    display: flex;
+    align-items: center;
+}
+
+.icons_size {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.icons_size:hover {
+    opacity: 0.7;
+}
+
+/* Menu Suspenso */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(10px);
+}
+
+/* Barra de Pesquisa no Menu */
+.dropdown-menu .search-bar {
+    margin-bottom: 20px;
+}
+
+.dropdown-menu .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Links do Menu */
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu ul li a:hover {
+    color: #4CAF50;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureCommunity</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <script defer src="/js/main.js"></script>
+    <script defer src="/js/products.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <div class="menu-icon">
+                <img src="/sources/menu.png" alt="Menu" id="menuIcon" class="icons_size">
+            </div>
+            <div class="logo">
+                <img src="/sources/firstlogo.png" alt="Logo da Naco" id="firstlogo">
+            </div>
+            <div class="cart-icon">
+                <img src="/sources/shop.png" alt="Carrinho" class="icons_size">
+            </div>
+        </div>
+
+        <!-- Menu Suspenso -->
+        <div id="dropdownMenu" class="dropdown-menu hidden">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Curioso">
+            </div>
+            <ul>
+                <li><a href="/index.html">Pagina Inicial</a></li>
+                <li><a href="contacts.html">Contato</a></li>
+                <li><a href="trocasedevolucao.html">Trocas e Devoluções</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner (Carrossel) -->
+    <section class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/sources/carrosel1.png" alt="Pessoa usando Camiseta NatureCommunity">
+            </div>
+            <div class="carousel-item">
+                <img src="/sources/carrosel2.png" alt="Pessoa usando Moletom NatureCommunity">
+            </div>
+            <div class="carousel-item">
+                <img src="/sources/carrosel3.png" alt="Pessoa usando Boné NatureCommunity">
+            </div>
+        </div>
+        <!-- Botões de navegação -->
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!-- Conteúdo Principal (Filtros + Produtos) -->
+    <div class="main-container">
+   <!-- Botão para abrir/fechar os filtros -->
+<button id="filterButton" class="filter-button">
+    Filtrar e Ordenar
+</button>
+
+<!-- Filtros Detalhados (inicialmente oculto) -->
+<div id="filterDetails" class="filter-details hidden">
+    <!-- Ordenar -->
+    <div class="filter-section">
+        <h3>Ordenar</h3>
+        <ul>
+            <li><label><input type="checkbox"> Preço: Menor ao Maior</label></li>
+            <li><label><input type="checkbox"> Preço: Maior ao Menor</label></li>
+            <li><label><input type="checkbox"> A - Z</label></li>
+            <li><label><input type="checkbox"> Z - A</label></li>
+            <li><label><input type="checkbox"> Mais Novo ao mais Antigo</label></li>
+            <li><label><input type="checkbox"> Mais Antigo ao mais Novo</label></li>
+            <li><label><input type="checkbox"> Mais Vendidos</label></li>
+        </ul>
+    </div>
+
+    <!-- Categorias -->
+    <div class="filter-section">
+        <h3>Categorias</h3>
+        <ul>
+            <li><label><input type="checkbox"> Camisa Polo</label></li>
+            <li><label><input type="checkbox"> Camisetas</label></li>
+            <li><label><input type="checkbox"> Regatas</label></li>
+            <li><label><input type="checkbox"> Moletons</label></li>
+            <li><label><input type="checkbox"> Acessórios</label></li>
+        </ul>
+    </div>
+
+    <!-- Cor -->
+    <div class="filter-section">
+        <h3>Cor</h3>
+        <ul>
+            <li><label><input type="checkbox"> Branco (3)</label></li>
+            <li><label><input type="checkbox"> Creme (2)</label></li>
+            <li><label><input type="checkbox"> Cru (1)</label></li>
+            <li><label><input type="checkbox"> Oliva (2)</label></li>
+            <li><label><input type="checkbox"> Preto (11)</label></li>
+            <li><label><input type="checkbox"> Azul Marinho (2)</label></li>
+            <li><label><input type="checkbox"> Brownie (1)</label></li>
+            <li><label><input type="checkbox"> Cinza Mescla (2)</label></li>
+        </ul>
+        <a href="#" class="see-all">Ver todos</a>
+    </div>
+</div>
+        <!-- Lista de Produtos -->
+        <main class="product-grid">
+            <div class="product-card">
+                <img src="/sources/nacomango.png" alt="Camiseta NACO - MANGO">
+                <h3>Camiseta NACO - MANGO</h3>
+                <p class="price">R$ 99,90</p>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="/sources/nacoorquidy.png" alt="Camiseta NACO - ORQUIDY">
+                <h3>Camiseta NACO - ORQUIDY</h3>
+                <p class="price">R$ 109,90</p>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="/sources/nacopolen.png" alt="Camiseta NACO - PÓLEN">
+                <h3>Camiseta NACO - PÓLEN</h3>
+                <p class="price">R$ 119,90</p>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            <!-- Adicione mais produtos aqui -->
+        </main>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 NatureCommunity. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
